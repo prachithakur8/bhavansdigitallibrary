@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Management Studies - Bhavan's Digital Library</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7a0;
+        }
+
+        header {
+            font-size: 24px;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            padding: 10px 5px;
+            background-color: rgb(182, 27, 27);
+            color: white;
+        }
+        
+        header h1 {
+            margin: 20px; 
+            text-align: center;
+            color: white;
+        }
+
+        #sections {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .section-card {
+            width: 1000px; 
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .section-card:hover {
+            background-color: #e9ba2a;
+            color: white;
+        }
+
+        .section-card p {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Management Studies</h1>
+    </header>
+
+    <div id="sections">
+        <div class="section-card" onclick="window.location.href='bms/first-year-bms.html'">
+            <p>First-Year</p>
+        </div>
+        <div class="section-card" onclick="window.location.href='bms/second-year-bms.html'">
+            <p>Second-Year</p>
+        </div>
+        <div class="section-card" onclick="window.location.href='bms/third-year-bms.html'">
+            <p>Third-Year</p>
+        </div>
+        <div class="section-card" onclick="window.location.href='bms/non-academic-bms.html'">
+            <p>Non-Academic Out of Syllabus Books</p>
+        </div>
+    </div>
+</body>
+</html>

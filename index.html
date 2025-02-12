@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bhavan's Digital Library</title>
+    <style>
+        header {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 10px 5px;
+            background-color: rgb(182, 27, 27);
+            color: white;
+        }
+
+        header img {
+            height: 110px; 
+        }
+
+        header h1 {
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        #description {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin: 10px;
+        }
+
+        #description p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            text-align: justify;
+            margin: 10px 0;
+            flex: 2;
+            padding-left: 25px;
+        }
+
+        #description img {
+            max-width: 500px;
+            height: auto;
+            flex: 1;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
+
+        #non-academic-genres {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #categories {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .category-card {
+            width: 250px; 
+            padding: 20px;
+            background-color: white;
+            border: 2px solid rgb(182, 27, 27);
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            color: rgb(182, 27, 27);
+        }
+
+        .category-card:hover {
+            background-color: #f0bf1a;
+            color: #FFFFFF;
+        }
+        
+        .category-card img {
+            width: 100%; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .category-card p {
+            color: rgb(182, 27, 27);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+            color: rgb(182, 27, 27);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.schoolmykids.com/wp-content/uploads/2019/05/Bhavans-Sri-Ramakrishna-Vidyalaya-Sainikpuri-Secunderabad.png" alt="College Logo">
+        <h1>BHAVAN'S COLLEGE DIGITAL LIBRARY</h1>
+    </header>
+    
+    <div id="description">
+        <div>
+            <p>The Bhavan's College Digital Library is a space where learning meets convenience, bringing knowledge</p>
+            <p>to your fingertips.</p>
+            <p>It offers students and faculty access to a vast collection of e-books, research papers, and academic journals.</p>
+            <p>All resources are available on an easy-to-navigate platform designed to make studying more efficient.</p>
+            <p>With just a few clicks, you can find exactly what you need and explore personalized recommendations.</p>
+            <p>Whether you're on campus or studying from home, the library is always accessible for flexible learning.</p>
+            <p>Regular updates keep the content fresh and relevant, ensuring you stay in step with the latest trends.</p>
+            <p>At its core, the digital library reflects Bhavan's commitment to empowering its community.</p>
+            <p>It provides the tools needed for academic and personal growth, fostering a culture of curiosity.</p>
+            <p>More than just a library, it is your partner in learning and development.</p>
+        </div>
+        <img src="https://dgmg81phhvh63.cloudfront.net/content/user-photos/Events/Institute-OER/Unknown-1.png" alt="Digital Library Illustration">
+    </div>
+
+    <h2>DEPARTMENTS</h2>
+    <div id="categories">
+        <div class="category-card" onclick="window.location.href='science.html'">
+            <img src="https://img.freepik.com/free-vector/flat-biotechnology-illustration_23-2148897381.jpg" alt="Science">
+            <p>Science</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='commerce.html'">
+            <img src="https://img.freepik.com/premium-vector/gradient-cost-living-illustration_52683-139098.jpg" alt="Commerce">
+            <p>Commerce</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='arts.html'">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-people-hobbies-set_23-2149058994.jpg" alt="Art">
+            <p>Arts</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='sfc.html'">
+            <img src="https://img.freepik.com/free-vector/college-project-concept-illustration_114360-10211.jpg" alt="SFC">
+            <p>SFC</p>
+        </div>
+    </div>
+
+    <h2>NON-ACADEMIC GENRES</h2>
+    <div id="non-academic-genres">
+        <div class="category-card" onclick="window.location.href='non-academic-genres/fiction.html'">
+            <img src="https://img.freepik.com/free-vector/childs-story-book_1051-545.jpg" alt="Fiction">
+            <p>Fiction</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='non-academic-genres/biography.html'">
+            <img src="https://img.freepik.com/free-vector/frame-with-student-boy-reading-book_25030-39037.jpg" alt="Biography">
+            <p>Biography</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='non-academic-genres/self-help.html'">
+            <img src="https://img.freepik.com/free-vector/home-study-room-with-books_25030-38882.jpg" alt="Self-Help">
+            <p>Self-Help</p>
+        </div>
+        <div class="category-card" onclick="window.location.href='non-academic-genres/philosophy.html'">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-poetry-illustration_23-2149279810.jpg" alt="Philosophy">
+            <p>Philosophy</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Year Science - Bhavan's Digital Library</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e7e7a0;
+            text-align: center;
+        }
+
+        header {
+            font-size: 20px;
+            padding: 10px;
+            background-color: #e9ba2a;
+            color: white;
+        }
+
+        #books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book-card {
+            width: 200px;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid #e9ba2a;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .book-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .book-info {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>First Year Science - Bhavan's Digital Library</h1>
+    </header>
+
+    <div id="books-container">
+        <div class="book-card">
+            <a href="https://example.com/physics-ebook.pdf" target="_blank">
+                <img src="covers/physics.jpg" alt="Physics Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> Physics</p>
+                <p><b>Book:</b> Fundamentals of Physics</p>
+                <p><b>Author:</b> Halliday & Resnick</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://example.com/chemistry-ebook.pdf" target="_blank">
+                <img src="covers/chemistry.jpg" alt="Chemistry Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> Chemistry</p>
+                <p><b>Book:</b> Organic Chemistry</p>
+                <p><b>Author:</b> Morrison & Boyd</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://example.com/maths-ebook.pdf" target="_blank">
+                <img src="covers/maths.jpg" alt="Mathematics Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> Mathematics</p>
+                <p><b>Book:</b> Calculus</p>
+                <p><b>Author:</b> James Stewart</p>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <a href="https://example.com/biology-ebook.pdf" target="_blank">
+                <img src="covers/biology.jpg" alt="Biology Book Cover">
+            </a>
+            <div class="book-info">
+                <p><b>Subject:</b> Biology</p>
+                <p><b>Book:</b> Molecular Biology of the Cell</p>
+                <p><b>Author:</b> Alberts et al.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

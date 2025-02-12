@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SFC Department - Bhavan's Digital Library</title>
+    <style>
+        header {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            padding: 15px 5px;
+            background-color: rgb(182, 27, 27);
+            color: white;
+        }
+
+        body{
+            background-color: #e7e7a0;
+        }
+        header h1 {
+            margin: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        #departments {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .dept-card {
+            width: 500px;
+            padding: 20px;
+            background-color:white;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dept-card:hover {
+            background-color: #f0bf1a;
+            color: #FFFFFF;
+        }
+
+        .dept-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .dept-card p {
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+            text-align: center;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SFC Programs</h1>
+    </header>
+    
+    <div id="departments">
+        <div class="dept-card" onclick="window.location.href='bsc_cs.html'">
+            <p>B.Sc CS</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bsc_biotech.html'">
+            <p>B.Sc Bio-Tech</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='msc_biodiversity.html'">
+            <p>M.Sc Biodiversity</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bsc_mlt.html'">
+            <p>B.Sc MLT</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bammc.html'">
+            <p>BAMMC</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='brm.html'">
+            <p>BRM</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bcms.html'">
+            <p>BCMS</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bms.html'">
+            <p>BMS</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='baf.html'">
+            <p>BAF</p>
+        </div>
+        <div class="dept-card" onclick="window.location.href='bsc_it.html'">
+            <p>B.Sc IT</p>
+        </div>
+    </div>
+</body>
+</html>
